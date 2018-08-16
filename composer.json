@@ -19,9 +19,7 @@
         "orchestra/testbench": "~3.0"
     },
     "autoload": {
-        "psr-4": {
-            "paulayuk\\laravel-contact-form\\": "src/"
-        }
+        
     },
     "autoload-dev": {
         "psr-4": {
