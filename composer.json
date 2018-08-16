@@ -1,0 +1,13 @@
+{
+    "name": "paulayuk/laravel-contact-form",
+    "description": "This package adds a contact form to any laravel website.",
+    "license": "mit",
+    "authors": [
+        {
+            "name": "Paulayuk",
+            "email": "ayukpaul1@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
