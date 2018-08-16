@@ -1,0 +1,41 @@
+{
+    "name": "paulayuk/laravel-contact-form",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Ayuk",
+            "email": "ayukpaul1@gmail.com",
+            "homepage": "https://github.com/paulayuk"
+        }
+    ],
+    "homepage": "https://github.com/paulayuk/laravel-contact-form",
+    "keywords": ["Laravel", "laravel-contact-form"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "paulayuk\\laravel-contact-form\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "paulayuk\\laravel-contact-form\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "paulayuk\\laravel-contact-form\\laravel-contact-formServiceProvider"
+            ],
+            "aliases": {
+                "laravel-contact-form": "paulayuk\\laravel-contact-form\\Facades\\laravel-contact-form"
+            }
+        }
+    }
+}
