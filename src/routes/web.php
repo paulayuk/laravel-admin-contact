@@ -2,5 +2,9 @@
 
 
 Route::get('contact', function(){
-	return 'Hello from the contact form package';
+	return view('contactform::contact');
 });
+
+Route::post('contact', function(){
+	
+})->name('contact');
