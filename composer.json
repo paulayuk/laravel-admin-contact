@@ -1,5 +1,5 @@
 {
-    "name": "paulayuk/laravel-contact-form",
+    "name": "paulayuk/contactform",
     "description": "This package adds a contact form to any laravel website.",
     "license": "mit",
     "authors": [
@@ -9,5 +9,10 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "paulayuk\\contactform\\": "src/"
+        }
+    },
 }
