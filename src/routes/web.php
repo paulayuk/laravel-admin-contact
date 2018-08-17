@@ -1,10 +1,10 @@
 <?php
 
+Route::group(['namespace' => 'Paulayuk\Contactform\Http\Controllers'], function(){
+	
+	Route::get('contact', 'ContactFormController@index');
 
-Route::get('contact', function(){
-	return view('contactform::contact');
+    Route::post('contact', 'ContactFormController@sendMail')->name('contact');
+
 });
 
-Route::post('contact', function(){
-	
-})->name('contact');
