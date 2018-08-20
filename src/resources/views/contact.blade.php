@@ -7,10 +7,18 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	  <title>Contact Us</title>
 </head>
-<body>
+	<body>
+
 	  <div style="width: 500px; margin: 0 auto; margin-top: 90px;">
+	  	@if(session('status'))
+		    <div class="alert alert-success">
+		        {{ session('status') }}
+		    </div>
+        @endif
+
       <h3>Contact Us</h3>
-      <form action="{{route('contact')}}" method="POST">
+      
+      <form action="{{route('mail')}}" method="POST">
       	@csrf
       	<div class="form-group">
 		    <label for="exampleFormControlInput1">Your name</label>

@@ -6,7 +6,7 @@ namespace Paulayuk\Contactform\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-
+use Paulayuk\Contactform\Models\ContactForm;
 
 
 class ContactFormController extends Controller {
@@ -18,7 +18,9 @@ class ContactFormController extends Controller {
 	
 	public function sendMail(Request $request)
 	{
-	    //add logic to send mail here
+	    ContactForm::create($request->all());
+
+	    return redirect(route('mail'))->with('status', 'Message Sent Successfully!');
 	}
 
 
