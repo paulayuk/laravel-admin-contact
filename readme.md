@@ -12,7 +12,7 @@ This package adds a contact form to any laravel website. Take a look at [contrib
 Via Composer
 
 ``` bash
-$ composer require paulayuk/laravel-contact-form
+$ composer require paulayuk/contactform
 ```
 
 ## Usage
